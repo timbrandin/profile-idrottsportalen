@@ -23,7 +23,6 @@ dependencies[] = ctools
 dependencies[] = dumpling
 dependencies[] = fences
 dependencies[] = menu_block
-dependencies[] = semantic_panels
 dependencies[] = views
 
 
