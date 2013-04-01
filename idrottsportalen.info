@@ -28,6 +28,8 @@ dependencies[] = views
 
 ; Our stuff
 dependencies[] = hidden_features
+dependencies[] = idpo_base
+dependencies[] = idpo_layout
 
 ; NodeStream things
 dependencies[] = ns_roles
