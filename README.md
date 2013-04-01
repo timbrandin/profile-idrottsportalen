@@ -1,6 +1,6 @@
-# NGBC
+# Idrottsportalen
 
-Norwegian green building council
+En episk idrottsportal i Drupal
 
 # Using grunt to build less
 We use less and grunt to build our own bootstrap version. Set this up
