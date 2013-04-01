@@ -7,9 +7,9 @@
 
 $plugin = array(
   'title' => t('Two columns 66/33'),
-  'theme' => 'ngbc_twocolumn',
-  'icon' => 'ngbc-twocolumn.png',
-  'category' => 'NGBC',
+  'theme' => 'idpo_twocolumn',
+  'icon' => 'idpo-twocolumn.png',
+  'category' => 'Idrottsportalen',
   'regions' => array(
     'left' => t('Left'),
     'right' => t('Right'),

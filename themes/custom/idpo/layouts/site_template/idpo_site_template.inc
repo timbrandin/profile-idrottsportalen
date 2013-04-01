@@ -2,9 +2,9 @@
 
 $plugin = array(
   'title' => t('Site template'),
-  'theme' => 'pretty_site_template',
-  'icon' => 'pretty-site-template.png',
-  'category' => 'Pretty',
+  'theme' => 'idpo_site_template',
+  'icon' => 'idpo-site-template.png',
+  'category' => 'Idrottsportalen',
   'regions' => array(
     'secondary_menu' => t('Secondary menu'),
     'branding_logo' => t('Branding logo'),
@@ -16,10 +16,3 @@ $plugin = array(
     'footer' => t('Footer'),
   ),
 );
-
-/**
- * Preprocess the site template layout.
- */
-function findwise_boostrap_preprocess_findwise_boostrap_site_template(&$vars) {
-
-}

@@ -3,14 +3,14 @@
 /**
  * Implements theme_menu_tree().
  */
-function pretty_menu_tree($vars) {
+function idpo_menu_tree($vars) {
   return $vars['tree'];
 }
 
 /**
  * Implements template_preprocess_hook().
  */
-function pretty_preprocess_menu_block_wrapper(&$vars) {
+function idpo_preprocess_menu_block_wrapper(&$vars) {
   if (isset($vars['config'])) {
     if ($vars['config']['menu_name'] == 'main-menu') {
       switch ($vars['config']['level']) {
@@ -31,7 +31,7 @@ function pretty_preprocess_menu_block_wrapper(&$vars) {
 /**
  * Implements template_preprocess_page().
  */
-function pretty_preprocess_html(&$vars) {
+function idpo_preprocess_html(&$vars) {
   // Strip out redundant classes.
   $vars['classes_array'] = preg_grep(
           '/(no-sidebars|page-node[^\w]*)/',
@@ -52,7 +52,7 @@ function pretty_preprocess_html(&$vars) {
 /**
  * Implements template_preprocess_layout().
  */
-function pretty_menu_local_tasks(&$vars) {
+function idpo_menu_local_tasks(&$vars) {
   $output = '';
 
   if (!empty($vars['primary'])) {
@@ -74,7 +74,7 @@ function pretty_menu_local_tasks(&$vars) {
 /**
  * Implements template_preprocess_panels_pane().
  */
-function pretty_preprocess_panels_pane(&$vars) {
+function idpo_preprocess_panels_pane(&$vars) {
   // Strip out redundant classes.
   $vars['classes_array'] = preg_grep(
           '/(panel-\w+)/i',
@@ -90,35 +90,31 @@ function pretty_preprocess_panels_pane(&$vars) {
  * Remove redundant pane separator.
  * Implements template_style_render_region().
  */
-function pretty_panels_default_style_render_region($vars) {
+function idpo_panels_default_style_render_region($vars) {
   return implode('', $vars['panes']);;
 }
 
 /**
  * Implements template_preprocess_field().
  */
-function pretty_preprocess_field(&$vars, $hook) {
+function idpo_preprocess_field(&$vars, $hook) {
   // Set default classes for all fields.
   $vars['classes_array'] = array('field',
     preg_replace('/(field_|ns_|page_)/i', '', $vars['element']['#field_name']));
 
   // A way to allow you to create preprocess functions for any field.
   if (isset($vars['element'], $vars['element']['#field_name'])) {
-    $function = 'pretty_preprocess_field__'. $vars['element']['#field_name'];
+    $function = 'idpo_preprocess_field__'. $vars['element']['#field_name'];
     if(function_exists($function)) {
       $function($vars);
     }
   }
 }
 
-function pretty_preprocess_field__field_ngbc_course_event(&$vars) {
-  $vars['classes_array'] = array('accordion-group');
-}
-
 /**
  * Implements template_preprocess_field().
  */
-function pretty_preprocess_node(&$vars) {
+function idpo_preprocess_node(&$vars) {
   // Set default classes for all fields.
 //  dpm($vars['node']);
   $vars['classes_array'] = array('node',
@@ -128,7 +124,7 @@ function pretty_preprocess_node(&$vars) {
 /**
  * Implements template_preprocess_entity().
  */
-function pretty_preprocess_file_entity(&$vars) {
+function idpo_preprocess_file_entity(&$vars) {
   $vars['classes_array'] = array('file', $vars['view_mode']);
 }
 
@@ -136,7 +132,7 @@ function pretty_preprocess_file_entity(&$vars) {
  * Remove whitespaces, newlines and tabs (speed optimization).
  * Used in html.tpl.php.
  */
-function pretty_clean($html) {
+function idpo_clean($html) {
   // Do not remove whitespaces for administrators.
   if (!user_access('administer nodes')) {
     $html = str_replace(array(

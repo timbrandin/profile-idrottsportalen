@@ -9,10 +9,10 @@
  */
 function idrottsportalen_install() {
   // We use seven as our admin theme.
-  theme_enable(array('seven', 'pretty'));
+  theme_enable(array('seven', 'idpo'));
   $variables = array(
     'admin_theme' => 'seven',
-    'theme_default' => 'pretty',
+    'theme_default' => 'idpo',
     'node_admin_theme' => 1,
   );
   foreach ($variables as $key => $variable) {

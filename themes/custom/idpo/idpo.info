@@ -1,7 +1,7 @@
-name = Pretty
-description = Pretty theme for NGBC
+name = IDPO
+description = Idrottsportalen's theme for 2013
 package = Core
-version = VERSION
+version = 7.21
 core = 7.x
 stylesheets[all][] = css/main.css
 stylesheets[all][] = system.menus.css
@@ -9,5 +9,3 @@ stylesheets[all][] = system.menus.css
 api[panels][styles][version] = 3
 plugins[panels][layouts] = layouts
 plugins[panels][styles] = styles
-
-scripts[] = js/ngbc_accordion.js

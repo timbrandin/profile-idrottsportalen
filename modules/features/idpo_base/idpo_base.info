@@ -1,0 +1,11 @@
+name = IDPO Base
+description = Base feature for IDPO, contains also hidden features.
+core = 7.x
+package = IDPO
+php = 5.2.4
+project = idpo_base
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[variable][] = hidden_features

@@ -14,7 +14,7 @@
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 <?php print $page_top; ?>
-<?php print pretty_clean($page); ?>
+<?php print idpo_clean($page); ?>
 <?php print $page_bottom; ?>
 </body>
 </html>

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the IDPO Base feature.
+ */
+
+include_once 'idpo_base.features.inc';

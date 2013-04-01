@@ -8,9 +8,9 @@
 
 $plugin = array(
   'title' => t('Naked'),
-  'theme' => 'ngbc_naked',
-  'icon' => 'ngbc-naked.png',
-  'category' => 'NGBC',
+  'theme' => 'idpo_naked',
+  'icon' => 'idpo-naked.png',
+  'category' => 'Idrottsportalen',
   'regions' => array(
     'main' => t('Main'),
   ),
