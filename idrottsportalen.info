@@ -1,0 +1,38 @@
+name = Idrottsportalen
+description = En episk idrottsportal i Drupal.
+core = 7.x
+
+; NS Core is a module that contains the upgrade path for all NodeStream
+; sites and some other goodies that is required for NodeStream to work.
+; We use a module instead of a profile, since it we can make NodeStream
+; features profile independent.
+dependencies[] = ns_core
+
+; Core
+dependencies[] = dblog
+dependencies[] = help
+dependencies[] = menu
+dependencies[] = panels_everywhere
+dependencies[] = page_manager
+dependencies[] = panels
+dependencies[] = taxonomy
+
+; Contrib
+dependencies[] = admin_menu
+dependencies[] = ctools
+dependencies[] = dumpling
+dependencies[] = fences
+dependencies[] = menu_block
+dependencies[] = semantic_panels
+dependencies[] = views
+
+
+; Our stuff
+dependencies[] = hidden_features
+
+; NodeStream things
+dependencies[] = ns_roles
+dependencies[] = ns_page
+dependencies[] = ns_article
+dependencies[] = ns_i18n
+dependencies[] = ns_text

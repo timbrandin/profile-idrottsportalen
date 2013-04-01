@@ -1,0 +1,218 @@
+/* feature.less */
+
+/**
+ * Instructions: Every feature starts with a name and crossing dashes to the 80
+ * char and ends with two newlines to clearly separate them for quick overlook.
+ * Each feature should also be sorted after rendering order, same goes for rules.
+ */
+
+/* Secondary navigation ----------------------------------------------------- */
+
+.secondary-menu {
+  position: relative;
+  width: 100%;
+}
+
+.pane-menu-secondary-menu {
+  position: absolute;
+  right: 0;
+}
+
+.secondary-menu .nav-pills > .active > a,
+.secondary-menu .nav-pills > .active > a:hover,
+.secondary-menu .nav-pills > .active > a:focus {
+  background: @secondarymeny-active;
+}
+
+/* Branding ----------------------------------------------------------------- */
+
+.branding {
+  padding: 20px 0;
+}
+
+.secondary-menu {
+  float: right;
+  .nav-pills > li > a {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 4px 8px 3px;
+    color: @linkcolor;
+  }
+  .nav-pills > .active > a,
+  .nav-pills > .active > a:hover,
+  .nav-pills > .active > a:focus {
+    color: @linkcolor;
+    background: #eee;
+  }
+}
+
+.logo {
+  margin: 10px 10px 0 0 !important;
+}
+
+.logo,
+.branding-left,
+.branding-right {
+  margin-top: 10px;
+}
+
+.site-name {
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.pane.slogan {
+
+}
+
+
+/* Navigation --------------------------------------------------------------- */
+
+@edgesize: 4px;
+
+.navbar {
+  margin-bottom: 10px;
+}
+
+.navbar-inner {
+  background: @blue;
+  #gradient.vertical(lighten(@blue, 5%), darken(@blue, 2%));
+  border-bottom: solid 5px;
+  border-bottom-color: @green;
+  .box-shadow(0 1px darken(@green, 8%), inset 0 -1px darken(@blue, 8%),
+    inset 0 1px darken(@blue, 1%), inset 0 3px lighten(@blue, 10%),
+    inset 0 -1px lighten(@blue, 2%););
+  .nav {
+    margin: 0;
+    & > li {
+      & > a {
+        text-transform: uppercase;
+        color: white;
+        display: inline-block;
+        font-weight: normal;
+        text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25);
+        padding: 15px 10px 13px;
+        margin: 0 5px;
+        .border-radius(0);
+        /* IE compatible inline-block */
+        zoom: 1;
+        *display: inline;
+        &.active-trail,
+        &.active,
+        &:hover {
+          position: relative;
+          text-shadow: 0 1px 0 lighten(@green, 20%);
+          color: #000;
+          background: @green;
+          margin-top: -(@edgesize - 1);
+          padding-top: 17px;
+          padding-bottom: 14px;
+          #gradient.vertical(lighten(@green, 6%), @green);
+          z-index: 1;
+          .box-shadow(1px 0 0 darken(@blue, 2%), -1px 0 0 darken(@blue, 2%););
+        }
+        &.active-trail:after,
+        &.active:after,
+        &:hover:after {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 0;
+          width: 100%;
+          height: 0;
+          top: -1px;
+          left: 0;
+          margin-left: -@edgesize;
+          border-bottom: @edgesize solid darken(@green, 10%);
+          border-left: @edgesize solid transparent;
+          border-right: @edgesize solid transparent;
+        }
+        &.active-trail:before,
+        &.active:before,
+        &:hover:before {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 1;
+          width: 100%;
+          height: @edgesize - 1;
+          top: -1px;
+          left: 0;
+          border-top: solid 1px lighten(@green, 2%);
+          background: lighten(@green, 10%);
+        }
+      }
+    }
+  }
+}
+
+/* Page title --------------------------------------------------------------- */
+
+.page-title {
+  margin-bottom: @basemargin;
+}
+
+
+/* Tabs --------------------------------------------------------------------- */
+
+.tabs {
+  overflow: auto;
+}
+
+.tabs .nav-tabs {
+  margin: 12px 0;
+  li {
+    list-style: none;
+    &.active {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+
+/* Nav stacked -------------------------------------------------------------- */
+
+.tabbable .nav-tabs > .active > a,
+.tabbable .nav-tabs > .active > a:hover,
+.tabbable .nav-tabs > .active > a:focus,
+.tabbable .nav-tabs > li > a:hover,
+.tabbable .nav-tabs > li > a:focus {
+  background: @secondarymeny-active;
+}
+
+.tabbable.tabs-left > .nav-tabs > li > a,
+.tabbable.tabs-right > .nav-tabs > li > a {
+  min-width: 274px;
+}
+
+/* Accordion ---------------------------------------------------------------- */
+
+.accordion-heading {
+  font-weight: bold;
+  &:hover {
+    background: @secondarymeny-active;
+  }
+  .date-display-single {
+    float: right;
+  }
+}
+
+.accordion-body {
+  overflow: hidden;
+  .details {
+    background: @secondarymeny-active;
+    margin: -14px -14px -8px;
+    margin-top: 14px;
+    padding: 14px;
+  }
+}
+
+
+/* Sitemap ------------------------------------------------------------------ */
+
+
+
+/* Footer ------------------------------------------------------------------- */
+

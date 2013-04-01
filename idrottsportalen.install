@@ -1,0 +1,21 @@
+<?php
+/**
+ * @file
+ * Example install file.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function idrottsportalen_install() {
+  // We use seven as our admin theme.
+  theme_enable(array('seven', 'pretty'));
+  $variables = array(
+    'admin_theme' => 'seven',
+    'theme_default' => 'pretty',
+    'node_admin_theme' => 1,
+  );
+  foreach ($variables as $key => $variable) {
+    variable_set($key, $variable);
+  }
+}

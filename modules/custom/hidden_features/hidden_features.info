@@ -1,0 +1,7 @@
+name = Hidden features
+description = "Provides options to hide features under a tab in the feature administration."
+package = Features
+core = 7.x
+configure = admin/structure/features/hidden
+
+dependencies[] = features

@@ -1,0 +1,13 @@
+name = Pretty
+description = Pretty theme for NGBC
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[all][] = css/main.css
+stylesheets[all][] = system.menus.css
+
+api[panels][styles][version] = 3
+plugins[panels][layouts] = layouts
+plugins[panels][styles] = styles
+
+scripts[] = js/ngbc_accordion.js
