@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the IPDO Layout feature.
- */
-
-include_once 'ipdo_layout.features.inc';

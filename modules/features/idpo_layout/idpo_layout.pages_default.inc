@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * ipdo_layout.pages_default.inc
+ * idpo_layout.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_handlers().
  */
-function ipdo_layout_default_page_manager_handlers() {
+function idpo_layout_default_page_manager_handlers() {
   $export = array();
 
   $handler = new stdClass();

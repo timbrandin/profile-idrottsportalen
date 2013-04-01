@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the IDPO Layout feature.
+ */
+
+include_once 'idpo_layout.features.inc';
