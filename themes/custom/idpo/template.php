@@ -25,6 +25,9 @@ function idpo_preprocess_menu_block_wrapper(&$vars) {
     elseif  ($vars['config']['menu_name'] == 'menu-secondary-menu') {
       $vars['classes_array'] = array('nav', 'nav-pills',);
     }
+    elseif  ($vars['config']['menu_name'] == 'user-menu') {
+      $vars['classes_array'] = array('nav', 'nav-pills',);
+    }
   }
 }
 

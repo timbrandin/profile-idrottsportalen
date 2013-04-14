@@ -152,11 +152,20 @@ function idpo_layout_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-6';
     $pane->panel = 'nav';
-    $pane->type = 'block';
-    $pane->subtype = 'system-main-menu';
+    $pane->type = 'menu_tree';
+    $pane->subtype = 'main-menu';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'menu_name' => 'main-menu',
+      'parent_mlid' => '0',
+      'title_link' => 0,
+      'admin_title' => '',
+      'level' => '1',
+      'follow' => 0,
+      'depth' => '3',
+      'expanded' => 0,
+      'sort' => 0,
       'override_title' => 1,
       'override_title_text' => '',
     );

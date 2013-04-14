@@ -9,3 +9,4 @@ dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[variable][] = hidden_features
+features[variable][] = node_options_ns_page
