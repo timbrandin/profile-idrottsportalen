@@ -19,17 +19,23 @@ dependencies[] = taxonomy
 
 ; Contrib
 dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
 dependencies[] = ctools
+dependencies[] = conditional_fields
+dependencies[] = date
+dependencies[] = date_popup
 dependencies[] = dumpling
 dependencies[] = fences
+dependencies[] = location
+dependencies[] = location_cck
 dependencies[] = menu_block
 dependencies[] = views
-
 
 ; Our stuff
 dependencies[] = hidden_features
 dependencies[] = idpo_base
 dependencies[] = idpo_layout
+dependencies[] = idpo_race
 
 ; NodeStream things
 dependencies[] = ns_roles

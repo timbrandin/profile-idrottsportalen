@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the IDPO Race feature.
+ */
+
+include_once 'idpo_race.features.inc';

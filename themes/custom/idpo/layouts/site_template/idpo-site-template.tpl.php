@@ -14,9 +14,6 @@
           <?php print render($content['secondary_menu']); ?>
         </div>
       <?php endif; ?>
-      <?php if (!empty($content['branding_logo'])): ?>
-          <?php print render($content['branding_logo']); ?>
-      <?php endif; ?>
       <?php if (!empty($content['branding_left'])): ?>
         <div class="branding-left">
           <?php print render($content['branding_left']); ?>
